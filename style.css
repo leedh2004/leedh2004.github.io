@@ -16,6 +16,15 @@ h1 {
     margin: 0;
 }
 
+iframe {
+    max-width: calc(100vw - 32px);
+}
+
+img {
+    max-width: calc(100vw - 72px)
+    /* box-sizing: content-box; */
+}
+
 .scale_image {
     transition: 0.5s linear;
     display: inline-block;
@@ -224,6 +233,12 @@ h1 {
     margin-left: 2em;
 }
 
+@media (max-width: 992px) {
+    .main {
+        margin-left: 16px;
+    }
+}
+
 .experience {
     margin-left: 2em;
     margin-top: 3em;
@@ -231,6 +246,12 @@ h1 {
 
 .experience > div {
     margin-top: 2em;
+}
+
+@media (max-width: 992px) {
+    .experience {
+        margin-left: 16px;
+    }
 }
 
 .title_with_date {
