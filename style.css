@@ -2,13 +2,15 @@
 html {
     height: 100%;
 }
-body {
+html, body {
     font-family: 'Jua', sans-serif;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 1.1em;
     margin: 0;
     padding: 0;
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
     color: rgba(255, 255, 255, 0.8);
 }
 
@@ -22,7 +24,6 @@ iframe {
 
 img {
     max-width: calc(100vw - 72px)
-    /* box-sizing: content-box; */
 }
 
 .scale_image {
