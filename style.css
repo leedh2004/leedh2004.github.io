@@ -165,6 +165,13 @@ img {
     display: none;
 }
 
+.mobile_sideBar p{
+    height: 50px;
+    line-height: 50px;
+    /* text-align: center; */
+    margin: 0;
+}
+
 .mobile_sideBar button {
     width: 30px;
     height: 30px;
@@ -178,7 +185,6 @@ img {
 }
 
 .mobile_sideBar #mobile_header {
-    height: 50px;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -186,6 +192,7 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 50px;
     padding: 0 16px;
 }
 
