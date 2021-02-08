@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOHYUN</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Jua&family=Noto+Sans+KR:wght@400;700;900&family=Saira+Extra+Condensed:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./dist/css/lightbox.min.css">
+        <script src="./static/js/lightbox-plus-jquery.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+        <script type="text/javascript" src="./static/jquery.js"></script>
+        <script type="text/javascript" src="./static/navigation.js"></script>
+    </head>
+    <body>
+        <div>
+            <div class="sideBar">
+                <img class="test" id="me" src="./assets/me.jpg">
+                <a class="nav_about nav-active" href="#" onclick= "move_nav('about')" >ABOUT</a>
+                <a class="nav_experience" href="#" onclick= "move_nav('experience')">EXPREIENCE</a>
+                <a class="nav_education" href="#" onclick= "move_nav('education')">EDUCATION</a>
+                <a class="nav_skills" href="#" onclick= "move_nav('skills')">SKILLS</a>
+                <a class="nav_awards" href="#" onclick= "move_nav('awards')">AWARDS</a>
+                <!-- <a class="nav_projects" href="#" onclick= "move_nav('projects')">PROJECTS</a> -->
+            </div>
+            <div class="mobile_sideBar">
+                <div id="mobile_header">
+                    <p>Dohyun</p>
+                    <button id="mobile_hamburger" onclick="show_navbar()"><i class="fas fa-bars" style="color: rgba(255, 255, 255, 0.8);"></i></button>
+                </div>
+                <a href="#" onclick= "move_nav('about')" >ABOUT</a>
+                <a href="#" onclick= "move_nav('experience')">EXPREIENCE</a>
+                <a href="#" onclick= "move_nav('education')">EDUCATION</a>
+                <a href="#" onclick= "move_nav('skills')">SKILLS</a>
+                <a href="#" onclick= "move_nav('awards')">AWARDS</a>
+            </div>
+
+            <div class="content">
+                <div class="about main">
+                    <h1 id="txt_name">LEE <span>DO HYUN</span></h1>
+                    <div>
+                        <span style="color: gray;"><i class="fas fa-birthday-cake"></i></span><span>  1997.11.28</span>
+                    </div>
+                    <div>
+                        <span style="color: gray;"><i class="fas fa-envelope"></i></span><span style="color: rgb(132,82,129);"> leedh2008@naver.com</span>
+                    </div>
+                    <div class="normal_font">
+                        <h3>안녕하세요, 저는 이도현이라고 합니다!</h3>
+                        <h3>저에 대해서 알고 싶으시다면 스크롤을 아래로 내려주세요 😀</h3>
+                    </div>
+                    <div id="buttons_wrapper">
+                        <div class="circle_button" onClick="window.open('https://www.facebook.com/profile.php?id=100014784996245')">
+                            <i class="fab fa-facebook-square fa-lg"></i>
+                        </div>
+                        <div class="circle_button" onClick="window.open('https://github.com/leedh2004')">
+                            <i class="fab fa-github fa-lg"></i>
+                        </div>
+                        <div class="circle_button" onClick="window.open('https://walwal234.tistory.com')">
+                            <img src="assets/tistory.png" style="color: white;" width="20px" />
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="experience">
+                    <h1 class="txt_subject">🧑🏻‍💻 EXPREIENCE</h1>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">2021 SW중심대학 해커톤 SW중심대학협의회장상</h2>
+                            <span>2021.02.04 ~ 2021.02.06</span>
+                        </div>
+                        <h3 class="txt_subtitle">잇-플 (Node.js, AWS)</h3>
+                        <h4>과학기술정보통신부, 정보통신기획평가원, SW중심대학협의회가 주관하는 SW중심대학 해커톤에서 <br>잇-플 프로젝트에 백엔드 개발자로 참여하여 SW중심대학협의회장상을 수상하였습니다.<br>
+                        </h4>
+                        
+                        <button class="link_button" onClick="window.open('https://github.com/leedh2004/It-Place')">
+                            <i class="fab fa-github fa-lg"></i>
+                            <span>Github</span>
+                        </button>
+                        <p class="txt_normal">
+                            - Express 프레임워크 기반의 Node.js RESTful API 서버 구축 <br />
+                            - AWS MySQL Server Hosting, ERD 및 DB Schema작성 <br />
+                            - AWS S3 Container Hosting<br/>
+                            <br/>
+                            * 발표영상
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BpsVy88qL3s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">SW마에스트로 11기</h2>
+                            <span>2020.06 ~ 2020.11</span>
+                        </div>
+                        <h3 class="txt_subtitle">STRIDE (Flutter, React)</h3>
+                        
+                        <h4>과학기술정보통신부, 정보통신기획평가원이 주관하는 SW 마에스트로에서<br/> 
+                            STRIDE 프로젝트에 모바일 앱 개발자로 참여하였습니다.<br>
+                            해당 프로젝트는 SW마에스트로 11기 주요 프로젝트로 선정되었습니다. <br />
+                        </h4>
+                        <button class="link_button" onClick="window.open('https://apps.apple.com/kr/app/id1531507804')">
+                            <i class="fab fa-app-store-ios"></i>
+                            <span>App Store</span>
+                        </button>
+                        <button class="link_button" onClick="window.open('https://play.google.com/store/apps/details?id=kr.co.stride.app')">
+                            <i class="fab fa-android"></i>
+                            <span>Play Store</span>
+                        </button>
+                        <button class="link_button" onClick="window.open('https://www.notion.so/Stride-Provider-MVVM-b6bcaaa192bd41428a40504cbdfa2180')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Document</span>
+                        </button>
+
+                        <p class="txt_normal">
+                            - Flutter를 이용한 iOS, Androdid Application 배포<br />
+                            - Firebase Analytics, Crashlytics, Retention 분석을 통한 지속적인 앱 업데이트<br />
+                            - React를 이용한 GUI Data Processing Application 제작 <br />
+                            <br/>
+                            * 작동영상
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lpkWew-7elg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <br/><br/>
+                        <p class="txt_normal">
+                            * 이미지를 클릭하시면, 크게 보실 수 있습니다.
+                        </p>
+                        <div>
+                            <a href="./assets/stride.jpg" data-lightbox="stride-1" >
+                                <img class="scale_image" src="./assets/stride.jpg" height="300">
+                            </a>
+                            <a href="./assets/soma.jpg" data-lightbox="stride-1">
+                                <img class="scale_image" src="./assets/soma.jpg" height="300">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">한양대학교 프로그래밍 경진대회 최우수상</h2>
+                            <span>2020.11.23</span>
+                        </div>
+                        <h3 class="txt_subtitle">Algorithm</h3>
+                        <h4>한양대학교에서 주최하는 프로그래밍 경진대회에 참가하여 최우수상을 받았습니다.<br />
+                        Advancde Divison 에서 3등(49명 참가)을 했습니다.(ID: GODDOKING) <br />
+                        </h4>
+                        <button class="link_button" onClick="window.open('https://hcpc.hanyang.ac.kr/contest_result/')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Result</span>
+                        </button>
+                        <div>
+                            <a href="./assets/algorithm.jpg" data-lightbox="algorithm-1">
+                                <img class="scale_image" src="./assets/algorithm.jpg" height="200">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">멋쟁이사자처럼 8기</h2>
+                            <span>2020.04 - 11</span>
+                        </div>
+                        <h3 class="txt_subtitle">한양대학교 운영진</h3>
+                        <h4>한양대학교 멋쟁이사자처럼 8기로 활동했습니다. <br /> React에 대한 스터디와, GraphQL 통신 기반의 Node.js 서버 구축 프로젝트를 진행했습니다.</h4>
+                        <a href="./assets/mutsa.jpg" data-lightbox="mutsa-1">
+                            <img class="scale_image" src="./assets/mutsa.jpg" height="300">
+                        </a>
+                    </div>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">한양대학교 SW창업경진대회 대상</h2>
+                            <span>2020.03 ~ 2020.06</span>
+                        </div>
+                        <h3 class="txt_subtitle">군 생활 관리 스마트 닥터 앱 (iOS, Django)</h3>
+                        <h4>2020 한양대학교 SW창업 경진대회에서 대상을 수상하였습니다. (26팀 참가, 1등)<br>
+                            팀에서 기획 및 iOS Native 앱 개발을 담당하였습니다.
+                        </h4>
+                        <button class="link_button" onClick="window.open('https://projectintheclass.github.io/Dr.Soldier/index.html')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Page</span>
+                        </button>
+                        <button class="link_button" onClick="window.open('http://www.newshyu.com/news/articleView.html?idxno=864945')">
+                            <i class="fas fa-newspaper"></i>
+                            <span>NEWS</span>
+                        </button>
+                        <div>
+                            <a href="./assets/drsoldier.jpg" data-lightbox="drsoldier-1">
+                                <img class="scale_image" src="./assets/drsoldier.jpg" height="400"/>
+                            </a>
+                            <a href="./assets/dr_info.png" data-lightbox="drsoldier-1">
+                                <img class="scale_image" src="./assets/dr_info.png" height="300"/>
+                            </a>
+                            <a href="./assets/dr_calendar.png" data-lightbox="drsoldier-1">
+                                <img class="scale_image" src="./assets/dr_calendar.png" height="300"/>
+                            </a>
+                            <a href="./assets/dr_community.png" data-lightbox="drsoldier-1">
+                                <img class="scale_image" src="./assets/dr_community.png" height="300"/>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="a">
+                        <div class="title_with_date">
+                            <h2 class="txt_title">국방부 SW집체교육 공군참모총장상</h2>
+                            <span>2019.10.21 ~ 2019.10.25</span>
+                        </div>
+                        <h3 class="txt_subtitle">닥터솔저(Vue.js, HTML5, CSS, JS)</h3>
+                        <h4>
+                            군 복무 시절, 군 장병 집체교육에 참여했습니다.<br>
+                            Vue.js를 이용한 SPA 웹 어플리케이션을 제작하였고 공군참모총장상을 수상하였습니다.(2000명 이상 지원, 11팀 수상) <br>
+                        </h4>
+                        <button class="link_button" onClick="window.open('https://github.com/osam2019/WEB_Dr.Soldier_Solo')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Github</span>
+                        </button>
+                        <button class="link_button" onClick="window.open('https://osam.kr/main/page.jsp?pid=offline.offline21')">
+                            <i class="fas fa-file-alt"></i>
+                            <span>Result</span>
+                        </button>
+                        <div>
+                            <a href="./assets/soldier_award.jpg" data-lightbox="drsoldier-2">
+                                <img class="scale_image" src="./assets/soldier_award.jpg" height="400"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="justformargin" style="height: 30px;">
+
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="education main">
+                    <h1 class="txt_subject">🏫 EDUCATION</h1>
+                    <br/><br/>
+                    <h1 class="txt_title">한양대학교</h1>
+                    <h2 class="txt_subtitle">Hanyang University</h2>
+                    <h4 class="txt_nomargin">2016 ~ 공과대학 컴퓨터소프트웨어학부</h4>
+                    <br/><br/>
+                    <h1 class="txt_title">재현고등학교</h1>
+                    <h2 class="txt_subtitle">JaeHyun High School</h2>
+                    <h4 class="txt_nomargin">2013 ~ 2015 이공계열</h4>
+                </div>
+                <div class="hr"></div>
+                <div class="skills main">
+                    <h1 class="txt_subject">🛠 SKILLS</h1>
+                    <div>
+                        <h2 class="txt_title">Programming Languages</h2>
+                        <h3 class="txt_normal">C, C++<br/>
+                        HTML5, CSS3, JavaScript<br/>
+                        Python<br/>
+                        Dart<br/>
+                        Swift<br/>
+                        </h3>
+                    </div>
+                    <div>
+                        <h2 class="txt_title">Frameworks</h2>
+                        <h3 class="txt_normal">Flutter<br/>
+                        Express<br/>
+                        React, React Native<br/>
+                        Vue, Vuex<br/>
+                        </h3>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="awards main">
+                    <h1 class="txt_subject">🏆 AWARDS &<br>CERTIFICATIONS</h1>
+                    <br/>
+                    <div>
+                        <h4 class="txt_normal">
+                            <i class="fas fa-trophy" style="color: rgb(246, 195, 68);"></i> SW마에스트로 11기 주요 프로젝트 선정<br/><br/>
+                            <i class="fas fa-trophy" style="color: rgb(246, 195, 68);"></i> 3<span style="font-size: x-small; top: -.5em; position: relative;"> rd</span> 2021 SW중심대학 해커톤 우수상<br/><br/>
+                            <i class="fas fa-trophy" style="color: rgb(246, 195, 68);"></i> 3<span style="font-size: x-small; top: -.5em; position: relative;"> rd</span>  2020 한양대학교 프로그래밍 경진대회 최우수상 <br/><br/>
+                            <i class="fas fa-trophy" style="color: rgb(246, 195, 68);"></i> 1<span style="font-size: x-small; top: -.5em; position: relative;"> st</span> 2020 한양대학교 SW창업경진대회 최우수상 <br/><br/>
+                            <i class="fas fa-trophy" style="color: rgb(246, 195, 68);"></i> 3<span style="font-size: x-small; top: -.5em; position: relative;"> rd</span> 2019 국방부 오픈소스 컨트리뷰톤 공군참모총장상 <br/><br/>
+                            <i class="fas fa-check" style="color: rgb(83, 164, 81);"></i> TOEIC 910<br/><br/>
+                            <i class="fas fa-check" style="color: rgb(83, 164, 81);"></i> 한국사 검정능력시험 1급<br/><br/>
+                            <i class="fas fa-check" style="color: rgb(83, 164, 81);"></i> 정보처리 산업기사<br/><br/>
+                        </h4>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <!-- <div class="projects main">
+                    <h1 class="txt_subject">PROJECTS</h1>
+                </div> -->
+            </div>
+
+        </div>
+    </body>
+</html>
