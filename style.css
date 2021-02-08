@@ -204,6 +204,9 @@ img {
         display: -webkit-flex;
         display: flex;
         flex-direction: column;
+        /* flex-wrap: nowrasp; */
+        /* justify-content: center; */
+        /* align-items: center; */
         background-color: rgb(45,45,45);
         position: fixed;
         width: 100%;
